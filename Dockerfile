@@ -5,7 +5,7 @@ FROM jenkins/jenkins:lts
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
 
 # Install any additional tools or dependencies if needed
-USER root
+
 RUN apt-get update && apt-get install -y git
 USER jenkins
 
